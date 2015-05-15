@@ -1,0 +1,38 @@
+{
+  "name": "seeiendom",
+  "description": "Get data from seeiendom.no",
+  "version": "1.0.0",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec test/*.js",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "seeiendom",
+    "matrikkelen",
+    "API"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zrrrzzt/seeiendom.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/seeiendom/issues"
+  },
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "iconv": "^2.1.7",
+    "valid-url": "^1.0.9"
+  }
+}
