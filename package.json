@@ -27,6 +27,7 @@
   "bugs": {
     "url": "http://github.com/zrrrzzt/seeiendom/issues"
   },
+  "license": "MIT",
   "devDependencies": {
     "jscs": "^1.13.1",
     "mocha": "^2.2.5"
