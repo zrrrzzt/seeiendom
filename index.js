@@ -24,7 +24,7 @@ function getDataFromSeEiendom(options, callback) {
   var url;
   var qs;
 
-  buildFilterstring(filterQuery, function(error, filterString){
+  buildFilterstring(filterQuery, function(error, filterString) {
     if (error) {
       return callback(error, null);
     } else {
@@ -32,7 +32,7 @@ function getDataFromSeEiendom(options, callback) {
       qs = querystring.stringify(query);
       url = apiUrl + '?' + qs;
 
-      getData(url, function(err, data){
+      getData(url, function(err, data) {
         if (err) {
           return callback(err, null);
         } else {
@@ -42,7 +42,7 @@ function getDataFromSeEiendom(options, callback) {
 
     }
 
-  })
+  });
 }
 
 module.exports = getDataFromSeEiendom;
