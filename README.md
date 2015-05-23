@@ -1,23 +1,29 @@
-# seeiendom [![Build Status](https://travis-ci.org/zrrrzzt/seeiendom.svg?branch=master)](https://travis-ci.org/zrrrzzt/seeiendom)
-Node module for [www.seeiendom.no](http://www.seeiendom.no/)
+[![Build Status](https://travis-ci.org/zrrrzzt/seeiendom.svg?branch=master)](https://travis-ci.org/zrrrzzt/seeiendom)
+# seeiendom
+Node module/CLI app for [www.seeiendom.no](http://www.seeiendom.no/)
 
 ## Installation
 From npm
 ```
 $ npm install seeiendom
 ```
+or globally for the CLI version
+
+```sh
+$ npm install seeiendom -g
+```
 
 From GitHub
-```
+```sh
 $ git clone git@github.com:zrrrzzt/seeiendom.git
 ```
 
 cd into directory and run setup
-```
+```sh
 $ npm run setup
 ```
 
-## Usage
+## Usage - module
 
 Pass an options object.
 
@@ -45,6 +51,15 @@ getDataFromSeEiendom(options, function(err, data) {
 });
 ```
 
+## Usage - CLI
+Send your query.
+
+```sh
+$ seeiendom 0806-60/77
+```
+
+
+## Result
 Example of returned data
 
 ```javascript
