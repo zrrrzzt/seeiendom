@@ -39,7 +39,6 @@
     "tap": "^5.0.1"
   },
   "dependencies": {
-    "iconv": "^2.1.7",
     "iconv-lite": "^0.4.13",
     "valid-url": "^1.0.9"
   }
