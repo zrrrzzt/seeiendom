@@ -32,8 +32,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jscs": "^1.13.1",
-    "mocha": "^2.2.5",
     "standard": "^5.4.1",
     "tap": "^5.0.1"
   },
