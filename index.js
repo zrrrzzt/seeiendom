@@ -24,21 +24,15 @@ function getDataFromSeEiendom (options, callback) {
   var url
   var qs
 
-  buildFilterstring(filterQuery, function (error, filterString) {
-    if (error) {
-      return callback(error, null)
-    } else {
-      query.filter = filterString
-      qs = querystring.stringify(query)
-      url = apiUrl + '?' + qs
+  query.filter = buildFilterstring(filterQuery)
+  qs = querystring.stringify(query)
+  url = apiUrl + '?' + qs
 
-      getData(url, function (err, data) {
-        if (err) {
-          return callback(err, null)
-        } else {
-          return callback(null, data)
-        }
-      })
+  getData(url, function (err, data) {
+    if (err) {
+      return callback(err, null)
+    } else {
+      return callback(null, data)
     }
   })
 }
