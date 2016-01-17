@@ -33,6 +33,11 @@
     "url": "http://github.com/zrrrzzt/seeiendom/issues"
   },
   "license": "MIT",
+  "standard": {
+    "rules": {
+      "no-eval": false
+    }
+  },
   "devDependencies": {
     "coveralls": "^2.11.6",
     "standard": "^5.4.1",
