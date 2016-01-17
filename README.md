@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/zrrrzzt/seeiendom.svg?branch=master)](https://travis-ci.org/zrrrzzt/seeiendom)
-[![Coverage Status](https://coveralls.io/repos/zrrrzzt/seeiendom/badge.svg?branch=master&service=github)](https://coveralls.io/github/zrrrzzt/seeiendom?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # seeiendom
 Node module/CLI app for [www.seeiendom.no](http://www.seeiendom.no/)
