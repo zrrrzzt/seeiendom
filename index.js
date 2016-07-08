@@ -1,18 +1,18 @@
 'use strict'
 
-var querystring = require('querystring')
-var getData = require('./lib/getData')
-var buildFilterstring = require('./lib/buildFilterstring')
-var apiUrl = 'http://eiendom.statkart.no/Search.ashx'
+const querystring = require('querystring')
+const getData = require('./lib/getData')
+const buildFilterstring = require('./lib/buildFilterstring')
+const apiUrl = 'http://eiendom.statkart.no/Search.ashx'
 
-function getDataFromSeEiendom (options, callback) {
+module.exports = (options, callback) => {
   if (!options) {
     return callback(new Error('Missing required param: options'), null)
   }
   if (!options.query) {
     return callback(new Error('Missing required param: options.query'), null)
   }
-  var filterQuery = {
+  const filterQuery = {
     sources: options.sources || ['sted', 'matreiendom'],
     key: options.key || 'httpwwwseeiendomno',
     groups: options.groups || ['guests']
@@ -21,14 +21,12 @@ function getDataFromSeEiendom (options, callback) {
     'term': options.query,
     '_': new Date().getTime()
   }
-  var url
-  var qs
 
   query.filter = buildFilterstring(filterQuery)
-  qs = querystring.stringify(query)
-  url = apiUrl + '?' + qs
+  const qs = querystring.stringify(query)
+  const url = `${apiUrl}?${qs}`
 
-  getData(url, function (err, data) {
+  getData(url, (err, data) => {
     if (err) {
       return callback(err, null)
     } else {
@@ -36,5 +34,3 @@ function getDataFromSeEiendom (options, callback) {
     }
   })
 }
-
-module.exports = getDataFromSeEiendom

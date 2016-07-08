@@ -1,7 +1,7 @@
 {
   "name": "seeiendom",
   "description": "Get data from seeiendom.no",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
