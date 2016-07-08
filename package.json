@@ -1,7 +1,7 @@
 {
   "name": "seeiendom",
   "description": "Get data from seeiendom.no",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
@@ -12,7 +12,7 @@
     "seeiendom": "cli.js"
   },
   "engines": {
-    "node": ">=4.4.5"
+    "node": ">=4.4.7"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "coveralls": "2.11.9",
     "standard": "7.1.2",
-    "tap": "5.7.2"
+    "tap": "6.1.1"
   },
   "dependencies": {
     "iconv-lite": "0.4.13",
