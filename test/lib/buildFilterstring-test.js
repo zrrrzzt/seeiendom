@@ -1,7 +1,7 @@
 'use strict'
 
 var tap = require('tap')
-var buildFilterstring = require('../lib/buildFilterstring')
+var buildFilterstring = require('../../lib/buildFilterstring')
 
 tap.throws(
   function () {

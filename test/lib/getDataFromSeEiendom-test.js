@@ -1,7 +1,7 @@
 'use strict'
 
 var tap = require('tap')
-var getDataFromSeEiendom = require('../index')
+var getDataFromSeEiendom = require('../../index')
 
 tap.test('it requires an options object', function (test) {
   var options = false
