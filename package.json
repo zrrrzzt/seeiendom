@@ -1,7 +1,7 @@
 {
   "name": "seeiendom",
   "description": "Get data from seeiendom.no",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
@@ -12,7 +12,7 @@
     "seeiendom": "cli.js"
   },
   "engines": {
-    "node": ">=4.6.1"
+    "node": ">=4.6.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
