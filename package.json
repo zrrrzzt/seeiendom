@@ -41,11 +41,11 @@
   "devDependencies": {
     "coveralls": "2.11.15",
     "nsp": "2.6.2",
-    "standard": "8.5.0",
-    "tap": "8.0.1"
+    "standard": "8.6.0",
+    "tap": "9.0.3"
   },
   "dependencies": {
-    "iconv-lite": "0.4.14",
+    "iconv-lite": "0.4.15",
     "valid-url": "1.0.9"
   }
 }
