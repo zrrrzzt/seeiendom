@@ -3,30 +3,15 @@
 
 # seeiendom
 
-Node module/CLI app for [www.seeiendom.no](http://www.seeiendom.no/)
+Node module for [www.seeiendom.no](http://www.seeiendom.no/)
 
 ## Installation
 From npm
-```
+```bash
 $ npm install seeiendom
 ```
-or globally for the CLI version
 
-```sh
-$ npm install seeiendom -g
-```
-
-From GitHub
-```sh
-$ git clone git@github.com:zrrrzzt/seeiendom.git
-```
-
-cd into directory and run setup
-```sh
-$ npm run setup
-```
-
-## Usage - module
+## Usage
 
 Pass an options object.
 
@@ -38,29 +23,23 @@ Pass an options object.
 
 **groups** An array of viewers. Defaults to ['guests']
 
-```javascript
-var getDataFromSeEiendom = require('seeiendom');
+### Callback
 
-var options = {
+```JavaScript
+const getDataFromSeEiendom = require('seeiendom')
+
+const options = {
   query: '0806-60/77'
-};
+}
 
-getDataFromSeEiendom(options, function(err, data) {
-  if (err) {
-    console.error(err);
+getDataFromSeEiendom(options, (error, data) => {
+  if (error) {
+    console.error(error)
   } else {
-    console.log(data);
+    console.log(data)
   }
-});
+})
 ```
-
-## Usage - CLI
-Send your query.
-
-```sh
-$ seeiendom 0806-60/77
-```
-
 
 ## Result
 Example of returned data
@@ -140,6 +119,16 @@ Example of returned data
 ```
 
 ## Disclaimer
+
 This is not an official module from [www.seeiendom.no](http://www.seeiendom.no/) and it is meant for private use only.
 For professional services please contact [Kartverket](http://kartverket.no/Bestille/Bestille-eiendomsdata/)
 
+## Related
+
+- [seeiendom-cli](https://github.com/zrrrzzt/seeiendom-cli) CLI for this module
+
+## License
+
+[MIT](LICENSE)
+
+![alt text](https://robots.kebabstudios.party/seeiendom.png "Robohash image of seeiendom")
