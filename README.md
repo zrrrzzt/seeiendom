@@ -23,6 +23,20 @@ Pass an options object.
 
 **groups** An array of viewers. Defaults to ['guests']
 
+### Promise
+
+```JavaScript
+const getDataFromSeEiendom = require('seeiendom')
+
+const options = {
+  query: '0806-60/77'
+}
+
+getDataFromSeEiendom(options)
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
+```
+
 ### Callback
 
 ```JavaScript
@@ -44,7 +58,7 @@ getDataFromSeEiendom(options, (error, data) => {
 ## Result
 Example of returned data
 
-```javascript
+```JavaScript
 [ 
   { 
     ID: '41515792',
