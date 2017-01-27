@@ -1,7 +1,7 @@
 'use strict'
 
 const querystring = require('querystring')
-const getData = require('./lib/getData')
+const getData = require('./lib/get-data')
 const buildFilterstring = require('./lib/buildFilterstring')
 const apiUrl = 'http://eiendom.statkart.no/Search.ashx'
 

@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/zrrrzzt/seeiendom.svg?branch=master)](https://travis-ci.org/zrrrzzt/seeiendom)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 # seeiendom
+
 Node module/CLI app for [www.seeiendom.no](http://www.seeiendom.no/)
 
 ## Installation
@@ -140,3 +142,4 @@ Example of returned data
 ## Disclaimer
 This is not an official module from [www.seeiendom.no](http://www.seeiendom.no/) and it is meant for private use only.
 For professional services please contact [Kartverket](http://kartverket.no/Bestille/Bestille-eiendomsdata/)
+
