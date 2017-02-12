@@ -1,7 +1,7 @@
 'use strict'
 
 var tap = require('tap')
-var getData = require('../../lib/getData')
+var getData = require('../../lib/get-data')
 
 tap.test('it requires param url to exist', function (test) {
   var url = false

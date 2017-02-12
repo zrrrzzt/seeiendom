@@ -1,24 +1,22 @@
 {
   "name": "seeiendom",
   "description": "Get data from seeiendom.no",
-  "version": "3.0.7",
+  "version": "4.0.0",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
     "url": "https://github.com/zrrrzzt"
   },
   "main": "index.js",
-  "bin": {
-    "seeiendom": "cli.js"
-  },
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=4.7.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js"
+    "setup": "npm install",
+    "standard-fix": "standard --fix"
   },
   "keywords": [
     "seeiendom",
