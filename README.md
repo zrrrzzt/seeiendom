@@ -3,6 +3,7 @@
 
 # seeiendom
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zrrrzzt/seeiendom.svg)](https://greenkeeper.io/)
 Node module for [www.seeiendom.no](http://www.seeiendom.no/)
 
 ## Installation
