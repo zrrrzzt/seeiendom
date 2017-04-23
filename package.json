@@ -1,7 +1,8 @@
 {
   "name": "seeiendom",
   "description": "Get data from seeiendom.no",
-  "version": "4.0.0",
+  "version": "4.0.1",
+  "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
@@ -9,7 +10,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.7.2"
+    "node": ">=4.8.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -25,12 +26,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/zrrrzzt/seeiendom.git"
+    "url": "https://github.com/zrrrzzt/seeiendom.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/seeiendom/issues"
+    "url": "https://github.com/zrrrzzt/seeiendom/issues"
   },
-  "license": "MIT",
+  "homepage": "https://github.com/zrrrzzt/seeiendom",
   "standard": {
     "rules": {
       "no-eval": false
