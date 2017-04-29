@@ -1,15 +1,15 @@
 [![Build Status](https://travis-ci.org/zrrrzzt/seeiendom.svg?branch=master)](https://travis-ci.org/zrrrzzt/seeiendom)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/zrrrzzt/seeiendom.svg)](https://greenkeeper.io/)
 
 # seeiendom
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/zrrrzzt/seeiendom.svg)](https://greenkeeper.io/)
 Node module for [www.seeiendom.no](http://www.seeiendom.no/)
 
 ## Installation
-From npm
+
 ```bash
-$ npm install seeiendom
+$ npm i seeiendom
 ```
 
 ## Usage
@@ -146,4 +146,4 @@ For professional services please contact [Kartverket](http://kartverket.no/Besti
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/seeiendom.png "Robohash image of seeiendom")
+![Robohash image of seeiendom](https://robots.kebabstudios.party/seeiendom.png "Robohash image of seeiendom")

@@ -1,7 +1,7 @@
 {
   "name": "seeiendom",
   "description": "Get data from seeiendom.no",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
@@ -44,7 +44,6 @@
     "tap": "10.3.2"
   },
   "dependencies": {
-    "iconv-lite": "0.4.16",
-    "valid-url": "1.0.9"
+    "iconv-lite": "0.4.16"
   }
 }

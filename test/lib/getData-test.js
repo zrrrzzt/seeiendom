@@ -12,15 +12,6 @@ tap.test('it requires param url to exist', function (test) {
   })
 })
 
-tap.test('it requires url to be a valid url', function (test) {
-  var url = 'pysjepreik'
-  var expectedErrorMessage = 'Param url is invalid'
-  getData(url, function (error, data) {
-    tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
-    test.done()
-  })
-})
-
 tap.test('it returns expected data', function (test) {
   var apiUrl = 'http://eiendom.statkart.no/Search.ashx?'
   var filter = 'filter=KILDE:sted,matreiendom,SITEURLKEY:httpwwwseeiendomno,LESEGRUPPER:guests'
