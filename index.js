@@ -2,24 +2,18 @@
 
 const querystring = require('querystring')
 const getData = require('./lib/get-data')
-const buildFilterstring = require('./lib/buildFilterstring')
+const buildFilterstring = require('./lib/build-filterstring')
 const apiUrl = 'http://eiendom.statkart.no/Search.ashx'
 
 module.exports = (options, callback) => {
   return new Promise((resolve, reject) => {
     if (!options) {
       let error = new Error('Missing required param: options')
-      if (callback) {
-        return callback(error, null)
-      }
-      reject(error)
+      return callback ? callback(error, null) : reject(error)
     }
     if (!options.query) {
       let error = new Error('Missing required param: options.query')
-      if (callback) {
-        return callback(error, null)
-      }
-      reject(error)
+      return callback ? callback(error, null) : reject(error)
     }
     const filterQuery = {
       sources: options.sources || ['sted', 'matreiendom'],
@@ -37,15 +31,9 @@ module.exports = (options, callback) => {
 
     getData(url, (error, data) => {
       if (error) {
-        if (callback) {
-          return callback(error, null)
-        }
-        reject(error)
+        return callback ? callback(error, null) : reject(error)
       } else {
-        if (callback) {
-          return callback(null, data)
-        }
-        resolve(data)
+        return callback ? callback(null, data) : resolve(data)
       }
     })
   })
