@@ -44,6 +44,6 @@
     "tap": "10.3.2"
   },
   "dependencies": {
-    "iconv-lite": "0.4.16"
+    "iconv-lite": "0.4.17"
   }
 }
