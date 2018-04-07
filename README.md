@@ -34,8 +34,8 @@ const options = {
 }
 
 getDataFromSeEiendom(options)
-  .then(data => console.log(data))
-  .catch(error => console.error(error))
+  .then(console.log)
+  .catch(console.error)
 ```
 
 ### Callback

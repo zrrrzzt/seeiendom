@@ -10,14 +10,14 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.8.4"
+    "node": ">=8.11.1"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install",
-    "standard-fix": "standard --fix"
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "seeiendom",
@@ -26,12 +26,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zrrrzzt/seeiendom.git"
+    "url": "git+https://github.com/zrrrzzt/seeiendom.git"
   },
   "bugs": {
     "url": "https://github.com/zrrrzzt/seeiendom/issues"
   },
-  "homepage": "https://github.com/zrrrzzt/seeiendom",
+  "homepage": "https://github.com/zrrrzzt/seeiendom#readme",
   "standard": {
     "rules": {
       "no-eval": false
