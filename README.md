@@ -144,5 +144,3 @@ For professional services please contact [Kartverket](http://kartverket.no/Besti
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of seeiendom](https://robots.kebabstudios.party/seeiendom.png "Robohash image of seeiendom")

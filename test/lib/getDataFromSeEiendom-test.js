@@ -25,9 +25,6 @@ tap.test('it requires options.query to exist', function (test) {
 
 tap.test('it returns expected data', function (test) {
   var options = {
-    sources: ['sted', 'matreiendom'],
-    key: 'httpwwwseeiendomno',
-    groups: ['guests'],
     query: '0806-60/77'
   }
   var expectedData = '41515792'
@@ -35,7 +32,7 @@ tap.test('it returns expected data', function (test) {
     if (error) {
       throw error
     }
-    tap.equal(data[0].ID.toString(), expectedData, 'Data ok')
+    tap.equal(data[0].id.toString(), expectedData, 'Data ok')
     test.done()
   })
 })

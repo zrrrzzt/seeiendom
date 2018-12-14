@@ -1,9 +1,6 @@
-'use strict'
-
 const querystring = require('querystring')
 const getData = require('./lib/get-data')
-const buildFilterstring = require('./lib/build-filterstring')
-const apiUrl = 'http://eiendom.statkart.no/Search.ashx'
+const apiUrl = 'https://seeiendom.kartverket.no/api/soekEtterEiendom'
 
 module.exports = (options, callback) => {
   return new Promise((resolve, reject) => {
@@ -15,17 +12,11 @@ module.exports = (options, callback) => {
       let error = new Error('Missing required param: options.query')
       return callback ? callback(error, null) : reject(error)
     }
-    const filterQuery = {
-      sources: options.sources || ['sted', 'matreiendom'],
-      key: options.key || 'httpwwwseeiendomno',
-      groups: options.groups || ['guests']
-    }
+
     let query = {
-      'term': options.query,
-      '_': new Date().getTime()
+      'searchstring': options.query
     }
 
-    query.filter = buildFilterstring(filterQuery)
     const qs = querystring.stringify(query)
     const url = `${apiUrl}?${qs}`
 

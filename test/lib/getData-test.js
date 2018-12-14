@@ -1,5 +1,3 @@
-'use strict'
-
 var tap = require('tap')
 var getData = require('../../lib/get-data')
 
@@ -13,18 +11,16 @@ tap.test('it requires param url to exist', function (test) {
 })
 
 tap.test('it returns expected data', function (test) {
-  var apiUrl = 'http://eiendom.statkart.no/Search.ashx?'
-  var filter = 'filter=KILDE:sted,matreiendom,SITEURLKEY:httpwwwseeiendomno,LESEGRUPPER:guests'
-  var term = '&term=0806-60/77'
-  var time = '&_=' + new Date().getTime()
-  var url = apiUrl + filter + term + time
+  var apiUrl = 'https://seeiendom.kartverket.no/api/soekEtterEiendom'
+  var term = '?searchstring=0806-60/77'
+  var url = apiUrl + term
   var expectedData = '41515792'
 
   getData(url, function (error, data) {
     if (error) {
       throw error
     }
-    tap.equal(data[0].ID.toString(), expectedData, 'Data OK')
+    tap.equal(data[0].id.toString(), expectedData, 'Data OK')
     test.done()
   })
 })
