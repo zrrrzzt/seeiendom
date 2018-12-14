@@ -1,34 +1,19 @@
-'use strict'
+const tap = require('tap')
+const getDataFromSeEiendom = require('../../index')
 
-var tap = require('tap')
-var getDataFromSeEiendom = require('../../index')
-
-tap.test('it requires an options object', function (test) {
-  var options = false
-  var expectedErrorMessage = 'Missing required param: options'
-  getDataFromSeEiendom(options, function (error, data) {
-    tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
-    test.done()
-  })
-})
-
-tap.test('it requires options.query to exist', function (test) {
-  var options = {
-    query: false
-  }
-  var expectedErrorMessage = 'Missing required param: options.query'
-  getDataFromSeEiendom(options, function (error, data) {
+tap.test('it requires a searchstring', function (test) {
+  const searchstring = false
+  const expectedErrorMessage = 'Missing required param: searchstring'
+  getDataFromSeEiendom(searchstring, function (error, data) {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
     test.done()
   })
 })
 
 tap.test('it returns expected data', function (test) {
-  var options = {
-    query: '0806-60/77'
-  }
-  var expectedData = '41515792'
-  getDataFromSeEiendom(options, function (error, data) {
+  const searchstring = '0806-60/77'
+  const expectedData = '41515792'
+  getDataFromSeEiendom(searchstring, function (error, data) {
     if (error) {
       throw error
     }

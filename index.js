@@ -2,19 +2,15 @@ const querystring = require('querystring')
 const getData = require('./lib/get-data')
 const apiUrl = 'https://seeiendom.kartverket.no/api/soekEtterEiendom'
 
-module.exports = (options, callback) => {
+module.exports = (searchstring, callback) => {
   return new Promise((resolve, reject) => {
-    if (!options) {
-      let error = new Error('Missing required param: options')
-      return callback ? callback(error, null) : reject(error)
-    }
-    if (!options.query) {
-      let error = new Error('Missing required param: options.query')
+    if (!searchstring) {
+      let error = new Error('Missing required param: searchstring')
       return callback ? callback(error, null) : reject(error)
     }
 
     let query = {
-      'searchstring': options.query
+      'searchstring': searchstring
     }
 
     const qs = querystring.stringify(query)

@@ -11,10 +11,8 @@ tap.test('it requires param url to exist', function (test) {
 })
 
 tap.test('it returns expected data', function (test) {
-  var apiUrl = 'https://seeiendom.kartverket.no/api/soekEtterEiendom'
-  var term = '?searchstring=0806-60/77'
-  var url = apiUrl + term
-  var expectedData = '41515792'
+  const url = 'https://seeiendom.kartverket.no/api/soekEtterEiendom?searchstring=0806-60/77'
+  const expectedData = '41515792'
 
   getData(url, function (error, data) {
     if (error) {
