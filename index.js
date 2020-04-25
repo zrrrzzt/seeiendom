@@ -5,12 +5,12 @@ const apiUrl = 'https://seeiendom.kartverket.no/api/soekEtterEiendom'
 module.exports = (searchstring, callback) => {
   return new Promise((resolve, reject) => {
     if (!searchstring) {
-      let error = new Error('Missing required param: searchstring')
+      const error = new Error('Missing required param: searchstring')
       return callback ? callback(error, null) : reject(error)
     }
 
-    let query = {
-      'searchstring': searchstring
+    const query = {
+      searchstring: searchstring
     }
 
     const qs = querystring.stringify(query)
