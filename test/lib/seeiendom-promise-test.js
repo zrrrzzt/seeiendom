@@ -15,8 +15,8 @@ tap.test('it requires an options object', function (test) {
 })
 
 tap.test('it returns expected data', function (test) {
-  const searchstring = '0806-60/77'
-  const expectedData = '41515792'
+  const searchstring = '3807-60/38'
+  const expectedData = '41515783'
   seeiendom(searchstring)
     .then((data) => {
       tap.equal(data[0].id.toString(), expectedData, 'Data ok')

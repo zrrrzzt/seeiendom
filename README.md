@@ -20,7 +20,7 @@ Pass in a searchstring, like an address or "gårds- og bruksnummer" **required**
 ```JavaScript
 const getDataFromSeEiendom = require('seeiendom')
 
-const searchstring = '0806-60/77'
+const searchstring = '3807-60/38'
 
 getDataFromSeEiendom(searchstring)
   .then(console.log)
@@ -32,7 +32,7 @@ getDataFromSeEiendom(searchstring)
 ```JavaScript
 const getDataFromSeEiendom = require('seeiendom')
 
-const searchstring = '0806-60/77'
+const searchstring = '3807-60/38'
 
 getDataFromSeEiendom(searchstring, (error, data) => {
   if (error) {
@@ -47,36 +47,16 @@ getDataFromSeEiendom(searchstring, (error, data) => {
 Example of returned data
 
 ```JavaScript
-[ 
-  { 
-    id: 41515792,
+[
+  {
+    id: 41515783,
     kommunenavn: 'SKIEN',
-    kommunenr: '0806',
+    kommunenr: '3807',
     gaardsnr: 60,
-    bruksnr: 77,
+    bruksnr: 38,
     festenr: 0,
     seksjonsnr: 0,
-    veiadresse: 'FYLKESBAKKEN 6, 3715 SKIEN' 
-  },
-  { 
-    id: 41515792,
-    kommunenavn: 'SKIEN',
-    kommunenr: '0806',
-    gaardsnr: 60,
-    bruksnr: 77,
-    festenr: 0,
-    seksjonsnr: 0,
-    veiadresse: 'FYLKESBAKKEN 8, 3715 SKIEN' 
-  },
-  { 
-    id: 41515792,
-    kommunenavn: 'SKIEN',
-    kommunenr: '0806',
-    gaardsnr: 60,
-    bruksnr: 77,
-    festenr: 0,
-    seksjonsnr: 0,
-    veiadresse: 'FYLKESBAKKEN 10, 3715 SKIEN' 
+    veiadresse: 'FYLKESBAKKEN 4, 3715 SKIEN'
   }
 ]
 ```

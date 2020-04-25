@@ -1,6 +1,6 @@
 (async () => {
   const getDataFromSeeiendom = require('./index')
-  const searchstring = '0806-60/77'
+  const searchstring = '3807-60/38'
   try {
     const data = await getDataFromSeeiendom(searchstring)
     console.log(data)
