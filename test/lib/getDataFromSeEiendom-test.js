@@ -6,7 +6,7 @@ tap.test('it requires a searchstring', function (test) {
   const expectedErrorMessage = 'Missing required param: searchstring'
   getDataFromSeEiendom(searchstring, function (error, data) {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
-    test.done()
+    test.end()
   })
 })
 
@@ -18,6 +18,6 @@ tap.test('it returns expected data', function (test) {
       throw error
     }
     tap.equal(data[0].id.toString(), expectedData, 'Data ok')
-    test.done()
+    test.end()
   })
 })

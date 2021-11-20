@@ -10,7 +10,7 @@ tap.test('it requires an options object', function (test) {
     })
     .catch((error) => {
       tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
-      test.done()
+      test.end()
     })
 })
 
@@ -20,7 +20,7 @@ tap.test('it returns expected data', function (test) {
   seeiendom(searchstring)
     .then((data) => {
       tap.equal(data[0].id.toString(), expectedData, 'Data ok')
-      test.done()
+      test.end()
     })
     .catch((error) => {
       throw error

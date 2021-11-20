@@ -6,7 +6,7 @@ tap.test('it requires param url to exist', function (test) {
   const expectedErrorMessage = 'Missing required param: url'
   getData(url, function (error, data) {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
-    test.done()
+    test.end()
   })
 })
 
@@ -19,6 +19,6 @@ tap.test('it returns expected data', function (test) {
       throw error
     }
     tap.equal(data[0].id.toString(), expectedData, 'Data OK')
-    test.done()
+    test.end()
   })
 })
