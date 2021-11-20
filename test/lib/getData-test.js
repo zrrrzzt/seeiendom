@@ -1,9 +1,9 @@
-var tap = require('tap')
-var getData = require('../../lib/get-data')
+const tap = require('tap')
+const getData = require('../../lib/get-data')
 
 tap.test('it requires param url to exist', function (test) {
-  var url = false
-  var expectedErrorMessage = 'Missing required param: url'
+  const url = false
+  const expectedErrorMessage = 'Missing required param: url'
   getData(url, function (error, data) {
     tap.equal(error.message, expectedErrorMessage, expectedErrorMessage)
     test.done()
