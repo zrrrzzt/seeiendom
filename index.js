@@ -10,7 +10,7 @@ module.exports = (searchstring, callback) => {
     }
 
     const query = {
-      searchstring: searchstring
+      searchstring
     }
 
     const qs = querystring.stringify(query)
